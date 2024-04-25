@@ -100,26 +100,33 @@ app.get('/', async (req, res) => {
                     <div class="progress" style="height: 30px;">
                         <div id="roeselareProgressBar" class="progress-bar ${roeselareProgressBarColor}" role="progressbar" style="width: ${roeselareProgressBarWidth}%; font-size: 20px;" aria-valuenow="${roeselareAvailableCount}" aria-valuemin="0" aria-valuemax="20">${roeselareAvailableCount}</div>
                     </div>
-                    <div id="roeselareSensorValue" class="mt-3">Available Charging Points: ${roeselareAvailableCount}</div>
+                    <div id="roeselareSensorValue" class="mt-3">Vrije laadpalen: ${roeselareAvailableCount}</div>
 
                     <h2>Sint-Denijs-Westrem</h2>
                     <div class="progress" style="height: 30px;">
                         <div id="sdwProgressBar" class="progress-bar ${sdwProgressBarColor}" role="progressbar" style="width: ${sdwProgressBarWidth}%; font-size: 20px;" aria-valuenow="${sdwAvailableCount}" aria-valuemin="0" aria-valuemax="20">${sdwAvailableCount}</div>
                     </div>
-                    <div id="sdwSensorValue" class="mt-3">Available Charging Points: ${sdwAvailableCount}</div>
+                    <div id="sdwSensorValue" class="mt-3">Vrije laadpalen: ${sdwAvailableCount}</div>
 
 
                     <h2>BMC - Evere</h2>
                     <div class="progress" style="height: 30px;">
                         <div id="bmcProgressBar" class="progress-bar ${bmcProgressBarColor}" role="progressbar" style="width: ${bmcProgressBarWidth}%; font-size: 20px;" aria-valuenow="${bmcAvailableCount}" aria-valuemin="0" aria-valuemax="20">${bmcAvailableCount}</div>
                     </div>
-                    <div id="bmcSensorValue" class="mt-3">Available Charging Points: ${bmcAvailableCount}</div>
+                    <div id="bmcSensorValue" class="mt-3">Vrije laadpalen: ${bmcAvailableCount}</div>
 
 
                 </div>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+                <nav class="navbar fixed-bottom bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://github.com/corneelvandercruyssen/rmg-chargingpoints">Corneel Van der Cruyssen - https://github.com/corneelvandercruyssen/rmg-chargingpoints</a>
+                </div>
+                </nav>
             </body>
             </html>
         `);

@@ -42,13 +42,16 @@ app.get('/', async (req, res) => {
             <body>
                 <div class="container">
                     <h1>Roularta vrije laadpunten</h1>
+					<h2>Roeselare<h2>
                     <div class="progress" style="height: 30px;">
                         <div id="progressBar" class="progress-bar ${progressBarColor}" role="progressbar" style="width: ${progressBarWidth}%; font-size: 20px;" aria-valuenow="${availableCount}" aria-valuemin="0" aria-valuemax="20"></div>
                     </div>
                     <div id="sensorValue" class="mt-3">Available Charging Points: ${availableCount}</div>
+					<h2>Evere - BMC<h2>
+					<h2>Sint-Denijs Western<h2>
                 </div>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/pop`per.js/1.16.0/umd/popper.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
             </body>
             </html>
@@ -62,5 +65,4 @@ app.get('/', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-
 

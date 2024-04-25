@@ -86,8 +86,16 @@ app.get('/', async (req, res) => {
                 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
             </head>
             <body>
+                <nav class="navbar" style="background-color: #fdfdfd;">
+                <div class="container-fluid">
+                <h1 class="navbar-brand" style="color: rgb(24, 27, 29); font-size: 2.3em;">
+                    <img src="https://www.roularta.be/sites/default/files/styles/sidebar/public/public/roularta/logos/corporate/Roularta-Visual-Rood-HIRES.png?itok=P2Ymelrm" alt="Logo" width="80" class="d-inline-block align-text-top">
+                    Roularta vrije laadpunten 
+                </h1>
+                </div>
+                </nav>
                 <div class="container">
-                    <h1>Roularta vrije laadpunten</h1>
+                    
                     <h2>Roeselare</h2>
                     <div class="progress" style="height: 30px;">
                         <div id="roeselareProgressBar" class="progress-bar ${roeselareProgressBarColor}" role="progressbar" style="width: ${roeselareProgressBarWidth}%; font-size: 20px;" aria-valuenow="${roeselareAvailableCount}" aria-valuemin="0" aria-valuemax="20">${roeselareAvailableCount}</div>

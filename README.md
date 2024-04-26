@@ -1,1 +1,5 @@
-Kleine webapplicatie om de laaplaen van Roularta in de gaten te houden.
+Web-Applicatie om de status van de laadpalen raad te plegen van Roularta Media Group:
+Locaties: 
+- Roeselare
+- Sint-Denijs-Westrem
+- Evere (BMC)
